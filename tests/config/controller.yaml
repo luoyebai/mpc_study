@@ -1,0 +1,6 @@
+%YAML 1.0
+matrix_true_tests:
+  test_cases: 2
+  test_datas: 
+    inputs: [100, 20, 20, 100]
+    res: [100, 20, 20, 100]
