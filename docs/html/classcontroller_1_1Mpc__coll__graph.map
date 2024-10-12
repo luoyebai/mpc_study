@@ -1,0 +1,3 @@
+<map id="controller::Mpc" name="controller::Mpc">
+<area shape="rect" id="Node000001" title="This is a class for model predictive control,use casadi to solve the optimization problem." alt="" coords="5,5,157,267"/>
+</map>

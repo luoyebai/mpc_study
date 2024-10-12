@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MpcController: controller::Mpc类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MpcController
+   </div>
+   <div id="projectbrief">This is a mpc controller</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcontroller_1_1Mpc.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classcontroller_1_1Mpc-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">controller::Mpc类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is a class for model predictive control,use casadi to solve the optimization problem.<br  />
+  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mpc_8hpp_source.html">mpc.hpp</a>&gt;</code></p>
+<div class="dynheader">
+controller::Mpc 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcontroller_1_1Mpc__coll__graph.png" border="0" usemap="#acontroller_1_1Mpc_coll__map" alt="Collaboration graph"/></div>
+<map name="acontroller_1_1Mpc_coll__map" id="acontroller_1_1Mpc_coll__map">
+<area shape="rect" title="This is a class for model predictive control,use casadi to solve the optimization problem." alt="" coords="5,5,157,267"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">AdjustmentMatrix</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is all cost weight matrices in MPC.<br  />
+ They are all diagonal matrices.  <a href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcontroller_1_1Mpc_1_1Dimensions.html">Dimensions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Includes the dimensions of the state vector and input vector.<br  />
+ Generally expressed by n and p.  <a href="structcontroller_1_1Mpc_1_1Dimensions.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">TransitionMatrix</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is state transition matrix for mpc.<br  />
+ Transition matrix is a matrix which can be used to calculate the next state.<br  />
+  <a href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aba41b0302908243bc778dd36ac09daf0" id="r_aba41b0302908243bc778dd36ac09daf0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba41b0302908243bc778dd36ac09daf0">Matrix</a> = casadi::DM</td></tr>
+<tr class="memdesc:aba41b0302908243bc778dd36ac09daf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casadi matrix type.  <br /></td></tr>
+<tr class="separator:aba41b0302908243bc778dd36ac09daf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af3ab9c7abb5f196da8062ea0b1bdd774" id="r_af3ab9c7abb5f196da8062ea0b1bdd774"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3ab9c7abb5f196da8062ea0b1bdd774">Mpc</a> ()=delete</td></tr>
+<tr class="separator:af3ab9c7abb5f196da8062ea0b1bdd774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa878307177ad9277ebec4d69f241f4eb" id="r_aa878307177ad9277ebec4d69f241f4eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa878307177ad9277ebec4d69f241f4eb">Mpc</a> (<a class="el" href="classcontroller_1_1Mpc.html">Mpc</a> &amp;)=default</td></tr>
+<tr class="separator:aa878307177ad9277ebec4d69f241f4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e8bff324c4f964c6eb0741529bcb51" id="r_ae1e8bff324c4f964c6eb0741529bcb51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e8bff324c4f964c6eb0741529bcb51">Mpc</a> (<a class="el" href="classcontroller_1_1Mpc.html">Mpc</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ae1e8bff324c4f964c6eb0741529bcb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d7d8b548b51d0072a27d952c7f561a" id="r_a02d7d8b548b51d0072a27d952c7f561a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02d7d8b548b51d0072a27d952c7f561a">~Mpc</a> ()=default</td></tr>
+<tr class="separator:a02d7d8b548b51d0072a27d952c7f561a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d77b4b80cbb5642734c520a47e0715" id="r_ad2d77b4b80cbb5642734c520a47e0715"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2d77b4b80cbb5642734c520a47e0715">Mpc</a> (const std::string &amp;config_path)</td></tr>
+<tr class="memdesc:ad2d77b4b80cbb5642734c520a47e0715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classcontroller_1_1Mpc.html" title="This is a class for model predictive control,use casadi to solve the optimization problem.">Mpc</a> controller using the configuration file.  <br /></td></tr>
+<tr class="separator:ad2d77b4b80cbb5642734c520a47e0715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5defdf4459d333bf473f496f75b0ae92" id="r_a5defdf4459d333bf473f496f75b0ae92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5defdf4459d333bf473f496f75b0ae92">Mpc</a> (const <a class="el" href="structcontroller_1_1Mpc_1_1Dimensions.html">Dimensions</a> &amp;dimensions, const <a class="el" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">TransitionMatrix</a> &amp;trans_mat, const <a class="el" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">AdjustmentMatrix</a> &amp;adjust_mat, int prediction_horizon=10, bool incremental=true) noexcept</td></tr>
+<tr class="memdesc:a5defdf4459d333bf473f496f75b0ae92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classcontroller_1_1Mpc.html" title="This is a class for model predictive control,use casadi to solve the optimization problem.">Mpc</a> controller.  <br /></td></tr>
+<tr class="separator:a5defdf4459d333bf473f496f75b0ae92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc079b75daaed099bf3f55a3a25db342" id="r_afc079b75daaed099bf3f55a3a25db342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc079b75daaed099bf3f55a3a25db342">setPredictionHorizon</a> (int N) noexcept</td></tr>
+<tr class="memdesc:afc079b75daaed099bf3f55a3a25db342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the prediction horizon.  <br /></td></tr>
+<tr class="separator:afc079b75daaed099bf3f55a3a25db342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542e565859e1e33e257544ff16141f4a" id="r_a542e565859e1e33e257544ff16141f4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a542e565859e1e33e257544ff16141f4a">checkAllMatrix</a> () const</td></tr>
+<tr class="memdesc:a542e565859e1e33e257544ff16141f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the dimensions of all the matrices.  <br /></td></tr>
+<tr class="separator:a542e565859e1e33e257544ff16141f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6595a151445d8ef615a1c731e5b01d6" id="r_ad6595a151445d8ef615a1c731e5b01d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6595a151445d8ef615a1c731e5b01d6">display</a> () const</td></tr>
+<tr class="memdesc:ad6595a151445d8ef615a1c731e5b01d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the dimensions and matrices.  <br /></td></tr>
+<tr class="separator:ad6595a151445d8ef615a1c731e5b01d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a2c5fbfa7abe033e664b15f65e602cb05" id="r_a2c5fbfa7abe033e664b15f65e602cb05"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c5fbfa7abe033e664b15f65e602cb05">checkMatrixDim</a> (const <a class="el" href="#aba41b0302908243bc778dd36ac09daf0">Matrix</a> &amp;mat, int size1, int size2) noexcept</td></tr>
+<tr class="memdesc:a2c5fbfa7abe033e664b15f65e602cb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the dimensions of the matrix.  <br /></td></tr>
+<tr class="separator:a2c5fbfa7abe033e664b15f65e602cb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This is a class for model predictive control,use casadi to solve the optimization problem.<br  />
+ </p>
+<p>Example code: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> mpc_controller = <a class="code hl_class" href="classcontroller_1_1Mpc.html">controller::Mpc</a>(mpc_config_path);</div>
+<div class="line">mpc_controller.display();</div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html"><div class="ttname"><a href="classcontroller_1_1Mpc.html">controller::Mpc</a></div><div class="ttdoc">This is a class for model predictive control,use casadi to solve the optimization problem.</div><div class="ttdef"><b>定义</b> mpc.hpp:44</div></div>
+</div><!-- fragment --><dl class="section note"><dt>注解</dt><dd>mpc_config_path is a yaml config file, example:<ul>
+<li>state_dim: 2</li>
+<li>input_dim: 2</li>
+<li>prediction_horizon: 10</li>
+<li>incremental: true</li>
+<li>A: [1, 0.1, -1, -2]</li>
+<li>B: [0.2, 1, 0.5, 2]</li>
+<li>Q: [100, 0, 0, 100]</li>
+<li>F: [100, 0, 0, 100]</li>
+<li>R: [1, 0, 0, 3] </li>
+</ul>
+</dd></dl>
+<dl class="section author"><dt>作者</dt><dd>luoyebai(<a href="#" onclick="location.href='mai'+'lto:'+'luo'+'ye'+'bai'+'44'+'44@'+'gm'+'ail'+'.c'+'om'; return false;">luoye<span class="obfuscator">.nosp@m.</span>bai4<span class="obfuscator">.nosp@m.</span>444@g<span class="obfuscator">.nosp@m.</span>mail<span class="obfuscator">.nosp@m.</span>.com</a>) </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2024-09-30 </dd></dl>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="aba41b0302908243bc778dd36ac09daf0" name="aba41b0302908243bc778dd36ac09daf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba41b0302908243bc778dd36ac09daf0">&#9670;&#160;</a></span>Matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aba41b0302908243bc778dd36ac09daf0">controller::Mpc::Matrix</a> = casadi::DM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Casadi matrix type. </p>
+<p>Please check the following website for specific details:<br  />
+ <a href="https://web.casadi.org/api/html/da/d45/classcasadi_1_1Matrix.html">https://web.casadi.org/api/html/da/d45/classcasadi_1_1Matrix.html</a> </p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="af3ab9c7abb5f196da8062ea0b1bdd774" name="af3ab9c7abb5f196da8062ea0b1bdd774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ab9c7abb5f196da8062ea0b1bdd774">&#9670;&#160;</a></span>Mpc() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">controller::Mpc::Mpc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa878307177ad9277ebec4d69f241f4eb" name="aa878307177ad9277ebec4d69f241f4eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa878307177ad9277ebec4d69f241f4eb">&#9670;&#160;</a></span>Mpc() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">controller::Mpc::Mpc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcontroller_1_1Mpc.html">Mpc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1e8bff324c4f964c6eb0741529bcb51" name="ae1e8bff324c4f964c6eb0741529bcb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e8bff324c4f964c6eb0741529bcb51">&#9670;&#160;</a></span>Mpc() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">controller::Mpc::Mpc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcontroller_1_1Mpc.html">Mpc</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02d7d8b548b51d0072a27d952c7f561a" name="a02d7d8b548b51d0072a27d952c7f561a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d7d8b548b51d0072a27d952c7f561a">&#9670;&#160;</a></span>~Mpc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">controller::Mpc::~Mpc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d77b4b80cbb5642734c520a47e0715" name="ad2d77b4b80cbb5642734c520a47e0715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d77b4b80cbb5642734c520a47e0715">&#9670;&#160;</a></span>Mpc() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">controller::Mpc::Mpc </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>config_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classcontroller_1_1Mpc.html" title="This is a class for model predictive control,use casadi to solve the optimization problem.">Mpc</a> controller using the configuration file. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_path</td><td>The config file path. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5defdf4459d333bf473f496f75b0ae92" name="a5defdf4459d333bf473f496f75b0ae92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5defdf4459d333bf473f496f75b0ae92">&#9670;&#160;</a></span>Mpc() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">controller::Mpc::Mpc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcontroller_1_1Mpc_1_1Dimensions.html">Dimensions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dimensions</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">TransitionMatrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>trans_mat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">AdjustmentMatrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>adjust_mat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>prediction_horizon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>incremental</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classcontroller_1_1Mpc.html" title="This is a class for model predictive control,use casadi to solve the optimization problem.">Mpc</a> controller. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimensions</td><td>State and input dimension. </td></tr>
+    <tr><td class="paramname">trans_mat</td><td>Transition matrix, including A and B. </td></tr>
+    <tr><td class="paramname">adjust_mat</td><td>Adjustment matrix, including Q, F and R. </td></tr>
+    <tr><td class="paramname">prediction_horizon</td><td>Prediction horizon, default is 10. </td></tr>
+    <tr><td class="paramname">incremental</td><td>If true, the input cost in the optimizer will use the input delta as a reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a542e565859e1e33e257544ff16141f4a" name="a542e565859e1e33e257544ff16141f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542e565859e1e33e257544ff16141f4a">&#9670;&#160;</a></span>checkAllMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool controller::Mpc::checkAllMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the dimensions of all the matrices. </p>
+<dl class="section return"><dt>返回</dt><dd>true All dimensions are correct. </dd>
+<dd>
+false Exist incorrect dimensions. </dd></dl>
+
+<p class="reference">引用了 <a class="el" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a4d0ec376c060e6e3f443467849ed2961">controller::Mpc::TransitionMatrix::A</a>, <a class="el" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a3aea1fbf3cd0fc8f83797a423d7a289d">controller::Mpc::TransitionMatrix::B</a>, <a class="el" href="#a2c5fbfa7abe033e664b15f65e602cb05">checkMatrixDim()</a>, <a class="el" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#aad50166fed9bdda56bdcbd2d0610614c">controller::Mpc::AdjustmentMatrix::F</a>, <a class="el" href="structcontroller_1_1Mpc_1_1Dimensions.html#a569dd278f93fef3e5bd6fce612c08c5b">controller::Mpc::Dimensions::input_dim</a>, <a class="el" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#ac5cd0f966ba543f0333ad7db0fb4d65d">controller::Mpc::AdjustmentMatrix::Q</a>, <a class="el" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#a41664468a1f401a0f189d8ab7f82c415">controller::Mpc::AdjustmentMatrix::R</a> , 以及 <a class="el" href="structcontroller_1_1Mpc_1_1Dimensions.html#a2bada127b15657d70e169617dfe188b3">controller::Mpc::Dimensions::state_dim</a>.</p>
+
+</div>
+</div>
+<a id="a2c5fbfa7abe033e664b15f65e602cb05" name="a2c5fbfa7abe033e664b15f65e602cb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5fbfa7abe033e664b15f65e602cb05">&#9670;&#160;</a></span>checkMatrixDim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool controller::Mpc::checkMatrixDim </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aba41b0302908243bc778dd36ac09daf0">Matrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check the dimensions of the matrix. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Checked matrix. </td></tr>
+    <tr><td class="paramname">size1</td><td>Columns. </td></tr>
+    <tr><td class="paramname">size2</td><td>Rows. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a542e565859e1e33e257544ff16141f4a">checkAllMatrix()</a>.</p>
+
+</div>
+</div>
+<a id="ad6595a151445d8ef615a1c731e5b01d6" name="ad6595a151445d8ef615a1c731e5b01d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6595a151445d8ef615a1c731e5b01d6">&#9670;&#160;</a></span>display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controller::Mpc::display </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the dimensions and matrices. </p>
+
+</div>
+</div>
+<a id="afc079b75daaed099bf3f55a3a25db342" name="afc079b75daaed099bf3f55a3a25db342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc079b75daaed099bf3f55a3a25db342">&#9670;&#160;</a></span>setPredictionHorizon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controller::Mpc::setPredictionHorizon </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>N</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the prediction horizon. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>Set value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/home/luoyebai/workspace/controll/mpc_study/include/controller/<a class="el" href="mpc_8hpp_source.html">mpc.hpp</a></li>
+<li>/home/luoyebai/workspace/controll/mpc_study/src/controller/<a class="el" href="mpc_8cpp.html">mpc.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecontroller.html">controller</a></li><li class="navelem"><a class="el" href="classcontroller_1_1Mpc.html">Mpc</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

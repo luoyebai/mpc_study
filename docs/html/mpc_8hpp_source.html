@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MpcController: /home/luoyebai/workspace/controll/mpc_study/include/controller/mpc.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MpcController
+   </div>
+   <div id="projectbrief">This is a mpc controller</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('mpc_8hpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mpc.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mpc_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef UTILS_MPC_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define UTILS_MPC_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// casadi</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;casadi/casadi.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacecontroller.html">   18</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecontroller.html">controller</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classcontroller_1_1Mpc.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classcontroller_1_1Mpc.html">Mpc</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">   51</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> = casadi::DM;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="};">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1Dimensions.html">   58</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structcontroller_1_1Mpc_1_1Dimensions.html">Dimensions</a> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1Dimensions.html#a2bada127b15657d70e169617dfe188b3">   60</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1Dimensions.html#a2bada127b15657d70e169617dfe188b3">state_dim</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1Dimensions.html#a569dd278f93fef3e5bd6fce612c08c5b">   62</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1Dimensions.html#a569dd278f93fef3e5bd6fce612c08c5b">input_dim</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    };</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">   78</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">TransitionMatrix</a> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a4d0ec376c060e6e3f443467849ed2961">   79</a></span>        <a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a4d0ec376c060e6e3f443467849ed2961">A</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a3aea1fbf3cd0fc8f83797a423d7a289d">   80</a></span>        <a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a3aea1fbf3cd0fc8f83797a423d7a289d">B</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    };</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">   88</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">AdjustmentMatrix</a> {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#ac5cd0f966ba543f0333ad7db0fb4d65d">   90</a></span>        <a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#ac5cd0f966ba543f0333ad7db0fb4d65d">Q</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#aad50166fed9bdda56bdcbd2d0610614c">   92</a></span>        <a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#aad50166fed9bdda56bdcbd2d0610614c">F</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#a41664468a1f401a0f189d8ab7f82c415">   94</a></span>        <a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> <a class="code hl_variable" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#a41664468a1f401a0f189d8ab7f82c415">R</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    };</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classcontroller_1_1Mpc.html#af3ab9c7abb5f196da8062ea0b1bdd774">   97</a></span>    <a class="code hl_function" href="classcontroller_1_1Mpc.html#af3ab9c7abb5f196da8062ea0b1bdd774">Mpc</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classcontroller_1_1Mpc.html#aa878307177ad9277ebec4d69f241f4eb">   98</a></span>    <a class="code hl_function" href="classcontroller_1_1Mpc.html#aa878307177ad9277ebec4d69f241f4eb">Mpc</a>(<a class="code hl_class" href="classcontroller_1_1Mpc.html">Mpc</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classcontroller_1_1Mpc.html#ae1e8bff324c4f964c6eb0741529bcb51">   99</a></span>    <a class="code hl_function" href="classcontroller_1_1Mpc.html#ae1e8bff324c4f964c6eb0741529bcb51">Mpc</a>(<a class="code hl_class" href="classcontroller_1_1Mpc.html">Mpc</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classcontroller_1_1Mpc.html#a02d7d8b548b51d0072a27d952c7f561a">  100</a></span>    <a class="code hl_function" href="classcontroller_1_1Mpc.html#a02d7d8b548b51d0072a27d952c7f561a">~Mpc</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="classcontroller_1_1Mpc.html#af3ab9c7abb5f196da8062ea0b1bdd774">Mpc</a>(<span class="keyword">const</span> std::string &amp;config_path);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classcontroller_1_1Mpc.html#af3ab9c7abb5f196da8062ea0b1bdd774">Mpc</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structcontroller_1_1Mpc_1_1Dimensions.html">Dimensions</a> &amp;dimensions,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                 <span class="keyword">const</span> <a class="code hl_struct" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">TransitionMatrix</a> &amp;trans_mat,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                 <span class="keyword">const</span> <a class="code hl_struct" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">AdjustmentMatrix</a> &amp;adjust_mat,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                 <span class="keywordtype">int</span> prediction_horizon = 10, <span class="keywordtype">bool</span> incremental = <span class="keyword">true</span>) noexcept;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classcontroller_1_1Mpc.html#afc079b75daaed099bf3f55a3a25db342">setPredictionHorizon</a>(<span class="keywordtype">int</span> N) noexcept;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    static <span class="keywordtype">bool</span> <a class="code hl_function" href="classcontroller_1_1Mpc.html#a2c5fbfa7abe033e664b15f65e602cb05">checkMatrixDim</a>(const <a class="code hl_typedef" href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">Matrix</a> &amp;mat, <span class="keywordtype">int</span> size1,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                               <span class="keywordtype">int</span> size2) noexcept;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classcontroller_1_1Mpc.html#a542e565859e1e33e257544ff16141f4a">checkAllMatrix</a>() const;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classcontroller_1_1Mpc.html#ad6595a151445d8ef615a1c731e5b01d6">display</a>() const;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>private:</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_struct" href="structcontroller_1_1Mpc_1_1Dimensions.html">Dimensions</a> dimensions_;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <a class="code hl_struct" href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">TransitionMatrix</a> trans_mat_;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <a class="code hl_struct" href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">AdjustmentMatrix</a> adjust_mat_;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">int</span> prediction_horizon_;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">bool</span> incremental_;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>};</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}  <span class="comment">// namespace controller</span></div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="preprocessor">#endif  </span><span class="comment">// !UTILS_MPC_HPP</span></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html"><div class="ttname"><a href="classcontroller_1_1Mpc.html">controller::Mpc</a></div><div class="ttdoc">This is a class for model predictive control,use casadi to solve the optimization problem.</div><div class="ttdef"><b>定义</b> mpc.hpp:44</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_a02d7d8b548b51d0072a27d952c7f561a"><div class="ttname"><a href="classcontroller_1_1Mpc.html#a02d7d8b548b51d0072a27d952c7f561a">controller::Mpc::~Mpc</a></div><div class="ttdeci">~Mpc()=default</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_a2c5fbfa7abe033e664b15f65e602cb05"><div class="ttname"><a href="classcontroller_1_1Mpc.html#a2c5fbfa7abe033e664b15f65e602cb05">controller::Mpc::checkMatrixDim</a></div><div class="ttdeci">static bool checkMatrixDim(const Matrix &amp;mat, int size1, int size2) noexcept</div><div class="ttdoc">Check the dimensions of the matrix.</div><div class="ttdef"><b>定义</b> mpc.cpp:46</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_a542e565859e1e33e257544ff16141f4a"><div class="ttname"><a href="classcontroller_1_1Mpc.html#a542e565859e1e33e257544ff16141f4a">controller::Mpc::checkAllMatrix</a></div><div class="ttdeci">bool checkAllMatrix() const</div><div class="ttdoc">Check the dimensions of all the matrices.</div><div class="ttdef"><b>定义</b> mpc.cpp:53</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_aa878307177ad9277ebec4d69f241f4eb"><div class="ttname"><a href="classcontroller_1_1Mpc.html#aa878307177ad9277ebec4d69f241f4eb">controller::Mpc::Mpc</a></div><div class="ttdeci">Mpc(Mpc &amp;)=default</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_aba41b0302908243bc778dd36ac09daf0"><div class="ttname"><a href="classcontroller_1_1Mpc.html#aba41b0302908243bc778dd36ac09daf0">controller::Mpc::Matrix</a></div><div class="ttdeci">casadi::DM Matrix</div><div class="ttdoc">Casadi matrix type.</div><div class="ttdef"><b>定义</b> mpc.hpp:51</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_ad6595a151445d8ef615a1c731e5b01d6"><div class="ttname"><a href="classcontroller_1_1Mpc.html#ad6595a151445d8ef615a1c731e5b01d6">controller::Mpc::display</a></div><div class="ttdeci">void display() const</div><div class="ttdoc">Print the dimensions and matrices.</div><div class="ttdef"><b>定义</b> mpc.cpp:77</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_ae1e8bff324c4f964c6eb0741529bcb51"><div class="ttname"><a href="classcontroller_1_1Mpc.html#ae1e8bff324c4f964c6eb0741529bcb51">controller::Mpc::Mpc</a></div><div class="ttdeci">Mpc(Mpc &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_af3ab9c7abb5f196da8062ea0b1bdd774"><div class="ttname"><a href="classcontroller_1_1Mpc.html#af3ab9c7abb5f196da8062ea0b1bdd774">controller::Mpc::Mpc</a></div><div class="ttdeci">Mpc()=delete</div></div>
+<div class="ttc" id="aclasscontroller_1_1Mpc_html_afc079b75daaed099bf3f55a3a25db342"><div class="ttname"><a href="classcontroller_1_1Mpc.html#afc079b75daaed099bf3f55a3a25db342">controller::Mpc::setPredictionHorizon</a></div><div class="ttdeci">void setPredictionHorizon(int N) noexcept</div><div class="ttdoc">Set the prediction horizon.</div><div class="ttdef"><b>定义</b> mpc.cpp:41</div></div>
+<div class="ttc" id="anamespacecontroller_html"><div class="ttname"><a href="namespacecontroller.html">controller</a></div><div class="ttdef"><b>定义</b> mpc.hpp:18</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1AdjustmentMatrix_html"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html">controller::Mpc::AdjustmentMatrix</a></div><div class="ttdoc">This is all cost weight matrices in MPC.  They are all diagonal matrices.</div><div class="ttdef"><b>定义</b> mpc.hpp:88</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1AdjustmentMatrix_html_a41664468a1f401a0f189d8ab7f82c415"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#a41664468a1f401a0f189d8ab7f82c415">controller::Mpc::AdjustmentMatrix::R</a></div><div class="ttdeci">Matrix R</div><div class="ttdoc">This is the weight matrix of the input cost in MPC.</div><div class="ttdef"><b>定义</b> mpc.hpp:94</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1AdjustmentMatrix_html_aad50166fed9bdda56bdcbd2d0610614c"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#aad50166fed9bdda56bdcbd2d0610614c">controller::Mpc::AdjustmentMatrix::F</a></div><div class="ttdeci">Matrix F</div><div class="ttdoc">This is the weight matrix of the final state cost in MPC.</div><div class="ttdef"><b>定义</b> mpc.hpp:92</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1AdjustmentMatrix_html_ac5cd0f966ba543f0333ad7db0fb4d65d"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1AdjustmentMatrix.html#ac5cd0f966ba543f0333ad7db0fb4d65d">controller::Mpc::AdjustmentMatrix::Q</a></div><div class="ttdeci">Matrix Q</div><div class="ttdoc">This is the weight matrix of the state error cost in MPC.</div><div class="ttdef"><b>定义</b> mpc.hpp:90</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1Dimensions_html"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1Dimensions.html">controller::Mpc::Dimensions</a></div><div class="ttdoc">Includes the dimensions of the state vector and input vector.  Generally expressed by n and p.</div><div class="ttdef"><b>定义</b> mpc.hpp:58</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1Dimensions_html_a2bada127b15657d70e169617dfe188b3"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1Dimensions.html#a2bada127b15657d70e169617dfe188b3">controller::Mpc::Dimensions::state_dim</a></div><div class="ttdeci">int state_dim</div><div class="ttdoc">State dimension.</div><div class="ttdef"><b>定义</b> mpc.hpp:60</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1Dimensions_html_a569dd278f93fef3e5bd6fce612c08c5b"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1Dimensions.html#a569dd278f93fef3e5bd6fce612c08c5b">controller::Mpc::Dimensions::input_dim</a></div><div class="ttdeci">int input_dim</div><div class="ttdoc">Input dimension.</div><div class="ttdef"><b>定义</b> mpc.hpp:62</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1TransitionMatrix_html"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1TransitionMatrix.html">controller::Mpc::TransitionMatrix</a></div><div class="ttdoc">This is state transition matrix for mpc.  Transition matrix is a matrix which can be used to calculat...</div><div class="ttdef"><b>定义</b> mpc.hpp:78</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1TransitionMatrix_html_a3aea1fbf3cd0fc8f83797a423d7a289d"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a3aea1fbf3cd0fc8f83797a423d7a289d">controller::Mpc::TransitionMatrix::B</a></div><div class="ttdeci">Matrix B</div><div class="ttdef"><b>定义</b> mpc.hpp:80</div></div>
+<div class="ttc" id="astructcontroller_1_1Mpc_1_1TransitionMatrix_html_a4d0ec376c060e6e3f443467849ed2961"><div class="ttname"><a href="structcontroller_1_1Mpc_1_1TransitionMatrix.html#a4d0ec376c060e6e3f443467849ed2961">controller::Mpc::TransitionMatrix::A</a></div><div class="ttdeci">Matrix A</div><div class="ttdef"><b>定义</b> mpc.hpp:79</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_39b9d54b040febeebc00140e5c10ba61.html">controller</a></li><li class="navelem"><a class="el" href="mpc_8hpp.html">mpc.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
