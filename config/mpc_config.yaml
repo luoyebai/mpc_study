@@ -1,0 +1,11 @@
+state_dim: 2
+input_dim: 2
+prediction_horizon: 10
+incremental: true
+A: [1, 0.1, -1, 2]
+B: [0.2, 1, 0.5, 2]
+Q: [100, 0, 0, 100]
+F: [100, 0, 0, 100]
+R: [0.1, 0, 0, 0.1]
+UBG: [1e10, 1e10]
+LBG: [-1e10, -1e10]
